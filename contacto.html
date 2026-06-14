@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contacto | Dulces Delicias</title>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+<style>
+
+/* ================= RESET ================= */
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+/* ================= BODY ================= */
+
+body{
+background:#d8c3a5;
+font-family:Georgia, serif;
+color:#3e2723;
+padding-top:100px;
+}
+
+/* ================= NAVBAR ================= */
+
+.navbar{
+position:fixed;
+top:0;
+left:0;
+
+
+width:100%;
+height:80px;
+
+background:#6d4c41;
+
+display:flex;
+justify-content:space-between;
+align-items:center;
+
+padding:0 50px;
+
+z-index:1000;
+
+box-shadow:0 2px 10px rgba(0,0,0,.2);
+
+
+}
+
+.logo{
+color:white;
+font-size:30px;
+font-weight:bold;
+font-family:"Times New Roman", serif;
+}
+
+.menu{
+display:flex;
+list-style:none;
+gap:30px;
+}
+
+.menu a{
+color:white;
+text-decoration:none;
+font-size:18px;
+transition:.3s;
+}
+
+.menu a:hover
+
+/* ================= CONTACTO ================= */
+
+.contacto{
+width:90%;
+max-width:1200px;
+margin:50px auto;
+}
+
+.titulo{
+text-align:center;
+margin-bottom:40px;
+}
+
+.titulo h1{
+font-size:55px;
+color:#4e342e;
+}
+
+.titulo p{
+font-size:22px;
+margin-top:10px;
+}
+
+.contenedor{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:30px;
+}
+
+.info,
+.formulario{
+background:white;
+padding:30px;
+border-radius:15px;
+box-shadow:0 5px 15px rgba(0,0,0,.1);
+}
+
+.info h2,
+.formulario h2{
+margin-bottom:20px;
+color:#6d4c41;
+}
+
+.info p{
+margin-bottom:20px;
+font-size:18px;
+}
+
+.info i{
+color:#6d4c41;
+margin-right:10px;
+}
+
+.redes{
+display:flex;
+gap:15px;
+margin-top:20px;
+}
+
+.redes a{
+width:50px;
+height:50px;
+background:#6d4c41;
+color:white;
+display:flex;
+align-items:center;
+justify-content:center;
+border-radius:50%;
+text-decoration:none;
+font-size:22px;
+transition:.3s;
+}
+
+.redes a:hover{
+transform:scale(1.1);
+}
+
+.formulario input,
+.formulario textarea{
+width:100%;
+padding:15px;
+margin-bottom:15px;
+border:1px solid #ccc;
+border-radius:10px;
+font-size:16px;
+}
+
+.formulario textarea{
+height:150px;
+resize:none;
+}
+
+.formulario button{
+width:100%;
+padding:15px;
+border:none;
+background:#6d4c41;
+color:white;
+font-size:18px;
+border-radius:10px;
+cursor:pointer;
+}
+
+
+.volver{
+    display:block;
+    width:200px;
+    margin:50px auto;
+    text-align:center;
+    text-decoration:none;
+    background:#6d4c41;
+    color:white;
+    padding:15px;
+    border-radius:10px;
+}
+.whatsapp{
+position:fixed;
+bottom:20px;
+right:20px;
+
+
+width:65px;
+height:65px;
+
+background:#25D366;
+color:white;
+
+border-radius:50%;
+
+display:flex;
+justify-content:center;
+align-items:center;
+
+font-size:35px;
+
+text-decoration:none;
+
+box-shadow:0 5px 15px rgba(0,0,0,.3);
+
+
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media(max-width:768px){
+
+.navbar{
+    flex-direction:column;
+    height:auto;
+    padding:15px;
+}
+
+.logo{
+    margin-bottom:10px;
+}
+
+.menu{
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:15px;
+}
+
+.contenedor{
+    grid-template-columns:1fr;
+}
+
+.titulo h1{
+    font-size:40px;
+}
+
+body{
+    padding-top:140px;
+}
+
+}
+
+
+</style>
+
+
+
+<!-- ================= HEADER ================= -->
+</head>
+
+<body>
+
+<header>
+    <nav class="navbar">
+
+        <div class="logo">
+            🥤 Dulces Delicias
+        </div>
+
+        <ul class="menu">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="productos.html">Productos</a></li>
+            <li><a href="nosotros.html">Nosotros</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+
+    </nav>
+</header>
+
+
+        
+
+<section class="contacto">
+
+    <div class="titulo">
+        <h1>Contáctanos</h1>
+        <p>Estamos listos para atenderte</p>
+    </div>
+
+    <div class="contenedor">
+
+        <!-- INFORMACIÓN -->
+
+        <div class="info">
+
+            <h2>Información de Contacto</h2>
+
+            <p>
+                <i class="fas fa-map-marker-alt"></i>
+                Bogotá, Colombia
+            </p>
+
+            <p>
+                <i class="fas fa-phone"></i>
+                +57 300 123 4567
+            </p>
+
+            <p>
+                <i class="fas fa-envelope"></i>
+                atencionalclientedulces@gmail.com
+            </p>
+
+            <p>
+                <i class="fas fa-clock"></i>
+                Lunes a Domingo
+                8:00 AM - 8:00 PM
+            </p>
+
+            <h2>Síguenos</h2>
+
+            <div class="redes">
+
+                <a href="#">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+
+                <a href="#">
+                    <i class="fab fa-instagram"></i>
+                </a>
+
+                <a href="#">
+                    <i class="fab fa-whatsapp"></i>
+                </a>
+
+                <a href="#">
+                    <i class="fab fa-tiktok"></i>
+                </a>
+
+            </div>
+
+        </div>
+
+        <!-- FORMULARIO -->
+
+        <div class="formulario">
+
+            <h2>Envíanos un Mensaje</h2>
+
+<form id="formulario">
+
+    <input type="text" id="nombre" placeholder="Nombre Completo" required>
+
+    <input type="email" id="correo" placeholder="Correo Electrónico" required>
+
+    <input type="text" id="asunto" placeholder="Asunto" required>
+
+    <textarea id="mensaje" placeholder="Escribe tu mensaje..." required></textarea>
+
+    <button type="button" onclick="enviarWhatsApp()">
+        Enviar Mensaje
+    </button>
+
+</form>
+
+
+
+
+
+  
+        </div>
+
+    </div>
+
+    <a href="contacto.html" class="volver">
+        Volver al Inicio
+    </a>
+
+</section>
+
+<!-- BOTÓN WHATSAPP -->
+
+<a href="https://wa.me/573001234567"
+class="whatsapp"
+target="_blank">
+
+<i class="fab fa-whatsapp"></i>
+
+</a>
+
+
+<script>
+
+function enviarWhatsApp(){
+
+    let nombre = document.getElementById("nombre").value;
+    let correo = document.getElementById("correo").value;
+    let asunto = document.getElementById("asunto").value;
+    let mensaje = document.getElementById("mensaje").value;
+
+    let texto =
+    "🍰 *Nuevo mensaje desde Dulces Delicias* %0A%0A" +
+    "👤 Nombre: " + nombre + "%0A" +
+    "📧 Correo: " + correo + "%0A" +
+    "📝 Asunto: " + asunto + "%0A" +
+    "💬 Mensaje: " + mensaje;
+
+    window.open(
+        "https://wa.me/573213945062?text=" + texto,
+        "_blank"
+    );
+
+}
+
+</script>
+
+
+
+</body>
+</html>

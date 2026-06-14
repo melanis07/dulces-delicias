@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Dulces Delicias</title>
+
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- ================= HEADER ================= -->
+
+<header>
+    <nav class="navbar">
+
+        <div class="logo">
+            🥤 Dulces Delicias
+        </div>
+
+        <ul class="menu">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="productos.html">Productos</a></li>
+            <li><a href="nosotros.html">Nosotros</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+
+    </nav>
+</header>
+    <!-- ================= CARRUSEL ================= -->
+
+    <section class="slider">
+
+        <div class="titulo-carrusel">
+            <h1>Dulces que Endulzan tu Día</h1>
+            <p>Postres, batidos y cupcakes preparados con amor</p>
+        </div>
+
+        <div class="swiper mySwiper">
+
+            <div class="swiper-wrapper">
+
+                <div class="swiper-slide">
+                    <img src="img/carrusel1.jpg" alt="Postre 1">
+                </div>
+
+                <div class="swiper-slide">
+                    <img src="img/carrusel2.jpg" alt="Postre 2">
+                </div>
+
+                <div class="swiper-slide">
+                    <img src="img/carrusel3.jpg" alt="Postre 3">
+                </div>
+
+                <div class="swiper-slide">
+                    <img src="img/currusel4.jpg" alt="Postre 4">
+                </div>
+
+                <div class="swiper-slide">
+                    <img src="img/currusel5.jpg" alt="Postre 5">
+                </div>
+
+            </div>
+
+            <!-- Paginación -->
+            <div class="swiper-pagination"></div>
+
+            <!-- Flechas -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+
+        </div>
+
+    </section>
+
+    <!-- ================= PRODUCTOS ================= -->
+
+    <section id="productos" class="productos">
+
+        <div class="titulo-seccion">
+            <h2>Nuestros Productos</h2>
+            <p>Selecciona una categoría para ver el catálogo completo</p>
+        </div>
+
+        <div class="cards">
+
+            <!-- BATIDOS -->
+            <a href="batidos.html" class="card">
+
+                <img src="img/PORTADA_BATIDOS.jpg" alt="Batidos">
+
+                <div class="contenido-card">
+                    <h3>Batidos</h3>
+                    <p>
+                        Deliciosos batidos artesanales elaborados
+                        con ingredientes frescos y sabores únicos.
+                    </p>
+
+                    <span class="boton">
+                        Ver Productos
+                    </span>
+                </div>
+
+            </a>
+
+            <!-- PANQUEQUES -->
+
+            <a href="panqueques.html" class="card">
+
+                <img src="img/PORTADA_PANQUEQUES.jpg" alt="Panqueques y Cupcakes">
+
+                <div class="contenido-card">
+
+                    <h3>Panqueques</h3>
+
+                    <p>
+                        Panqueques esponjosos y cupcakes decorados
+                        para cualquier ocasión especial.
+                    </p>
+
+                    <span class="boton">
+                        Ver Productos
+                    </span>
+
+                </div>
+
+            </a>
+
+
+
+            
+            <!-- CUPCAKES -->
+
+            <a href="cupcakes.html" class="card">
+
+                <img src="img/PORTADA_CUPCAKES.jpg" alt="Panqueques y Cupcakes">
+
+                <div class="contenido-card">
+
+                    <h3>Cupcakes</h3>
+
+                    <p>
+                        Panqueques esponjosos y cupcakes decorados
+                        para cualquier ocasión especial.
+                    </p>
+
+                    <span class="boton">
+                        Ver Productos
+                    </span>
+
+                </div>
+
+            </a>
+
+
+            <!-- POSTRES -->
+
+            <a href="postres.html" class="card">
+
+                <img src="img/PORTADA_POSTRES.jpg" alt="Postres">
+
+                <div class="contenido-card">
+
+                    <h3>Postres</h3>
+
+                    <p>
+                        Una selección de postres artesanales,
+                        cheesecakes, brownies y mucho más.
+                    </p>
+
+                    <span class="boton">
+                        Ver Productos
+                    </span>
+
+                </div>
+
+            </a>
+
+        </div>
+
+    </section>
+
+    <!-- ================= FRASE ================= -->
+
+    <section class="frase">
+
+        <h2>
+            "Cada postre está elaborado con dedicación para
+            convertir un momento simple en una experiencia especial."
+        </h2>
+
+    </section>
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer>
+
+        <div class="footer-contenido">
+
+            <h3>Dulces Delicias</h3>
+
+            <p>
+                Postres artesanales, batidos y cupcakes preparados
+                con ingredientes de calidad.
+            </p>
+
+            <div class="footer-links">
+
+                <a href="index.html">Inicio</a>
+
+                <a href="nosotros.html">Nosotros</a>
+
+                <a href="contacto.html">Contacto</a>
+
+            </div>
+
+        </div>
+
+        <div class="copyright">
+            © 2025 Dulces Delicias - Todos los derechos reservados.
+        </div>
+
+    </footer>
+
+    <!-- ================= SWIPER ================= -->
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+    <script>
+
+        var swiper = new Swiper(".mySwiper", {
+
+            loop: true,
+
+            autoplay: {
+                delay: 3000,
+                disableOnInteraction: false,
+            },
+
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+
+            speed: 1000,
+
+            centeredSlides: true
+
+        });
+
+    </script>
+
+</body>
+</html>
